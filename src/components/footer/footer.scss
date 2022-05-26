@@ -1,0 +1,90 @@
+footer {
+    width: 1920px;
+    height: 350px;
+    color: #FFFFFF;
+    background-color: #0C2F33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: #FFFFFF !important;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            padding-top: 20px;
+        }
+        li:nth-child(4n-3) {
+            padding-top: 4px;
+        }
+        li:nth-child(n+5):nth-child(-n+8) {
+            margin-left: -20px;
+        }
+    }
+    .time-date {
+        color: #4C858B;
+    }
+    .container {
+        width: 1220px;
+        height: 172px;
+        display: grid;
+        grid-template-columns: 438px 438px 409px;
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+        .catalog {
+            grid-column: 1/2;
+            ul {
+                column-count: 2;
+            }
+        }
+        .information {
+            grid-column: 2/3;
+            ul {
+                column-count: 2;
+            }
+        }
+        .work-time {
+            grid-column: 3/4;
+            padding-left: 35px;
+            .time::before {
+                content: url(../../assets/images/footer/clock.svg);
+                margin-right: 8px;
+                vertical-align: middle;
+            }
+            .address::before {
+                content: url(../../assets/images/footer/point.svg);
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+            ul {
+                li {
+                    padding-top: 14px;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 400;
+                    letter-spacing: 0.01em;
+                }
+                li:first-of-type {
+                    padding-top: 6px;
+                }
+                li:last-of-type {
+                    padding-top: 30px;
+                }
+            }
+            .socials {
+                width: 200px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}
