@@ -260,7 +260,7 @@ main {
                 flex-direction: column;
                 .info,
                 .inputs {
-                    margin-left: 60px;
+                    margin-left: 58px;
                 }
                 .form-container {
                     margin-bottom: 18px;
@@ -282,23 +282,24 @@ main {
                     line-height: 30px;
                 }
                 input {
-                    width: 232px;
-                    height: 56px;
+                    height: 55px;
                     letter-spacing: 0.1em;
                 }
                 input[type="text"] {
-                    margin-right: 16px;
+                    width: 222px;
+                    padding-left: 14px;
+                    margin-right: 12px;
                     border: 1px solid #E5E5E5;
                     border-radius: 4px;
                     color: #B1B1B1;
                     &::placeholder {
-                        transform: translateX(12px);
                         font-weight: 500;
                         font-size: 14px;
                         line-height: 22px;
                     }
                 }
                 input[type="button"] {
+                    width: 240px;
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 20px;
