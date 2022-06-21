@@ -33,7 +33,7 @@ footer {
         width: 1220px;
         height: 172px;
         display: grid;
-        grid-template-columns: 438px 438px 409px;
+        grid-template-columns: 0.341fr 0.341fr 0.318fr;
         .title {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -85,6 +85,30 @@ footer {
                 justify-content: space-between;
                 align-items: center;
             }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        max-width: 768px;
+        height: 70px;
+        .container {
+            display: block;
+            height: 70px !important;
+        }
+        ul {
+            width: 100% !important;
+            margin: 0;
+        }
+        .work-time {
+            height: 70px !important;
+            padding: 0 !important;
+        }
+        .work-time__item.socials {
+            height: 70px !important;
+            padding: 0 !important;
+            margin: 0 auto!important;
         }
     }
 }
