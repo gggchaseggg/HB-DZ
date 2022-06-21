@@ -118,3 +118,27 @@ header {
         }
     }
 }
+
+@media (max-width: 320px) {
+    header {
+        margin-top: 16px !important;
+        max-width: 290px !important;
+        height: 64px !important;
+        width: min-content !important;
+        grid-template-columns: 180px 0px 0px 0px 0px 66px auto;
+        grid-template-rows: 50px;
+        .logo {
+            img {
+                height: 47px;
+                width: 48px;
+            }
+        }
+        .cart,
+        .burger {
+            img {
+                height: 44px;
+                width: 44px;
+            }
+        }
+    }
+}

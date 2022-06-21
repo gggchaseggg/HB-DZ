@@ -364,6 +364,9 @@ main {
 }
 
 @media (max-width: 768px) {
+    .adaptive768-no-display {
+        display: none;
+    }
     h1 {
         margin-top: -2px !important;
         font-size: 45px !important;
@@ -374,9 +377,6 @@ main {
     }
     .container {
         max-width: 735px !important;
-    }
-    .adaptive768-no-display {
-        display: none;
     }
     .nav-bar {
         margin-top: 29px !important;
@@ -557,6 +557,206 @@ main {
         img:nth-child(7),
         img:nth-child(8) {
             margin-right: 28px !important;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .adaptive320-no-display {
+        display: none;
+    }
+    .container {
+        max-width: 289px !important;
+    }
+    h1 {
+        margin-top: -20px !important;
+        font-size: 30px !important;
+        line-height: 37px !important;
+    }
+    h2 {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    .nav-bar {
+        margin-top: 15px !important;
+    }
+    .info {
+        margin-top: -3px !important;
+        font-size: 14px !important;
+        line-height: 26px !important;
+    }
+    .advantages {
+        margin-top: 18px !important;
+        .title {
+            font-size: 18px !important;
+            line-height: 32px !important;
+        }
+        .subtitle {
+            font-size: 30px !important;
+            line-height: 37px !important;
+        }
+        ul {
+            padding-top: 2px !important;
+            padding-left: 30px !important;
+            max-width: 256px !important;
+            width: max-content !important;
+            font-size: 14px !important;
+            line-height: 24px !important;
+        }
+    }
+    .assembling {
+        margin-top: 35px !important;
+        .grid-container {
+            margin-top: 11px !important;
+            grid-template-columns: 48px 235px !important;
+            grid-template-rows: 64px 63px 117px 68px 118px 70px !important;
+            grid-template-areas: unset !important;
+            grid-auto-flow: column;
+            .assembling__counter-1,
+            .assembling__counter-2,
+            .assembling__counter-3,
+            .assembling__counter-4,
+            .assembling__counter-5,
+            .assembling__counter-6,
+            .assembling__item-1,
+            .assembling__item-2,
+            .assembling__item-3,
+            .assembling__item-4,
+            .assembling__item-5,
+            .assembling__item-6 {
+                grid-area: unset !important;
+            }
+            .assembling__counter-1,
+            .assembling__counter-2,
+            .assembling__counter-3,
+            .assembling__counter-4,
+            .assembling__counter-5,
+            .assembling__counter-6 {
+                align-self: flex-start;
+            }
+        }
+    }
+    .why {
+        margin-top: 34px !important;
+        p.info {
+            margin-top: 25px !important;
+        }
+        .services {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 289px !important;
+            width: 289px !important;
+            margin-top: 22px !important;
+            .services__guarantee,
+            .services__help,
+            .services__reviews {
+                min-width: 289px !important;
+                max-width: 289px !important;
+                margin: 0;
+            }
+            .services__help {
+                margin-top: 26px !important;
+            }
+            .services__reviews {
+                margin-top: 32px !important;
+            }
+            h3 {
+                margin-top: 20px !important;
+            }
+        }
+    }
+    .consultation {
+        margin-top: 29px !important;
+        max-width: 289px !important;
+        width: 289px !important;
+        h2 {
+            margin-right: auto;
+            margin-left: auto;
+            width: 289px !important;
+            font-size: 22px !important;
+            line-height: 30px !important;
+        }
+        p.request {
+            margin-right: auto !important;
+            margin-left: auto !important;
+            width: 289px !important;
+            margin-top: 0 !important;
+            font-size: 14px !important;
+            line-height: 26px !important;
+        }
+        form {
+            margin-top: 30px !important;
+            box-shadow: none !important;
+            .form-container {
+                border-top: 1px solid #E5E5E5;
+                width: 289px !important;
+                .info {
+                    margin-top: 25px !important;
+                }
+                span.black,
+                span.red {
+                    font-size: 18px !important;
+                    line-height: 26px !important;
+                }
+                p.soon {
+                    margin-top: -6px !important;
+                    font-size: 14px !important;
+                    line-height: 25px !important;
+                }
+                .inputs {
+                    margin-top: 25px !important;
+                }
+                input[type="text"] {
+                    margin-left: 0px !important;
+                    width: 270px !important;
+                }
+            }
+        }
+    }
+    .video {
+        margin-top: -2px !important;
+        p.info {
+            margin-top: 26px !important;
+        }
+        .background {
+            margin-top: 24px !important;
+            height: 163px !important;
+            img {
+                max-width: 287px !important;
+                position: unset !important;
+            }
+        }
+    }
+    .photo {
+        margin-top: 48px !important;
+        margin-bottom: 53px !important;
+        p.info {
+            margin-top: 14px !important;
+        }
+        .example {
+            margin-top: 16px !important;
+        }
+        img {
+            width: 130px;
+            height: 120px;
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+        img:nth-child(-n+6) {
+            margin-bottom: 11px !important;
+        }
+        img:nth-child(1),
+        img:nth-child(2),
+        img:nth-child(4),
+        img:nth-child(5),
+        img:nth-child(7),
+        img:nth-child(8) {
+            margin-right: 0px !important;
+        }
+        img:nth-child(2n+1) {
+            margin-right: 29px !important;
         }
     }
 }
